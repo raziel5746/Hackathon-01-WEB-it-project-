@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Acme|Asap|Barlow+Condensed|Comfortaa|Indie+Flower|Lobster|Source+Code+Pro|Source+Serif+Pro|Yanone+Kaffeesatz&display=swap"
+        rel="stylesheet">
+    <title>WEB-IT!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="left">
+            <h1>WEB-it!</h1>
+            <h3>User Instructions</h3>
+            <ol>
+                <li>select design template</li>
+                <li>click element location in template</li>
+                <li>write text/ add link in input line</li>
+                <li>click type of element</li>
+                <li>select colour and background colour</li>
+            </ol><br>
+            <span>Add:</span><br>
+            <button class="btnAddElement" id="btnAddRow" name="div">Row</button><br>
+            <button class="btnAddElement" id="btnAddColumn" name="div">Column</button><br>
+            <button class="btnAddElement" id="btnAddTable" name="table">Table</button><br>
+            <button class="btnAddElement" id="btnAddNavbar" name="navbar">Navbar</button><br><br>
+            <input id="input" type="text" name="userInput" placeholder="Write down some text"><br>
+            <button id="insertTextBtn">Insert text</button><br><br>
+            <span>Elements:</span><br>
+            <button class="btnAddElement" id="btnAddA" name="a">Link (a)</button>
+            <input type="text" id="hrefInput" placeholder="href here..."><br>
+            <button class="btnAddElement" id="btnAddImg" name="img">Image (img)</button><br>
+            <button class="btnAddElement" id="btnAddH1" name="h1">Header (h1)</button><br>
+            <button class="btnAddElement" id="btnAddP" name="p">Paragraph (p)</button><br><br>
+            <span>Font:</span>
+            <select id="fonts">
+                <option value="Indie Flower">Indie Flower</option>
+                <option value="Lobster">Lobster</option>
+                <option value="Comfortaa">Comfortaa</option>
+                <option value="Barlow Condensed">Barlow Condensed</option>
+                <option value="Asap">Asap</option>
+                <option value="Acme">Acme</option>
+                <option value="Source Serif Pro">Source Serif Pro</option>
+            </select>
+
+            <select id="colours">
+                <option value="black" selected>black</option>
+                <option value="blue">blue</option>
+                <option value="purple">purple</option>
+                <option value="red">red</option>
+                <option value="orange">orange</option>
+                <option value="yellow">yellow</option>
+                <option value="white">white</option>
+                <option value="green">green</option>
+                <option value="pink">pink</option>
+            </select><br><br>
+            <button id="btnTemplate1">Template 1</button><br>
+            <button id="btnTemplate2">Template 2</button><br><br>
+            <button id="btnRemove">
+                <h1>REMOVE</h1>
+            </button><br><br>
+            <button id="btnExport" name="export">
+                <h1>EXPORT</h1>
+            </button>
+        </div>
+    </div>
+    <div id="rightContainer">
+        <div id="top">
+            <div id="myWeb" class="selectable"></div>
+        </div>
+        <div id="bottom">
+            <textarea name="" id="exportArea" cols="30" rows="10" wrap="hard"></textarea><br>
+            <button id="btnClear">Clear</button>
+        </div>
+        </di>
+
+
+    </div>
+    <script src="main.js"></script>
+    <script src="templates.js"></script>
+</body>
+
+</html>
