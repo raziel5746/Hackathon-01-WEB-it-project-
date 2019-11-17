@@ -19,6 +19,7 @@ body {
     min-width: 400px;
     height: 97vh;
     padding-left: 20px;
+    background-color: rgba(125, 74, 141, 0.315);
 }
 
 #rightContainer {
@@ -110,4 +111,23 @@ img {
 .container button, input, select {
     border-radius: 5px;
     border: 2px darkgray solid;
+}
+
+button {
+    width:  120px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: white;
+}
+
+ol {
+    background-color: rgba(55, 0, 55, 0.657);
+    color: white;
+
+}
+
+#left {
+    font-family: Comfortaa;
 }
