@@ -12,7 +12,7 @@ let hrefInput = document.querySelector("#hrefInput")
 let btnAddA = document.querySelector("#btnAddA");
 let btnAddH1 = document.querySelector("#btnAddH1");
 let btnAddP = document.querySelector("#btnAddP");
-let insertTextBtn = document.querySelector("#insertTextBtn");
+let btnInsertText = document.querySelector("#btnInsertText");
 let btnExport = document.querySelector("#btnExport");
 let myWeb = document.querySelector("#myWeb");
 let codeToExport;
@@ -115,7 +115,7 @@ btnAddP.addEventListener("click", function () {
 	addChild();
 })
 
-insertTextBtn.addEventListener("click", function () {
+btnInsertText.addEventListener("click", function () {
 	let newText = document.createTextNode(input.value);
 	selectedElement.appendChild(newText);
 	selectedElement.style.color = colours.value;
